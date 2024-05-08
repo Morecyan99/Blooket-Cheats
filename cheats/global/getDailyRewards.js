@@ -39,7 +39,7 @@
                 place: 1,
                 playersDefeated: 0,
             });
-            axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
+            axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 5000, addedXp: 30000 })
                 .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
                 .catch(() => alert('There was an error when adding rewards.'));
         }
